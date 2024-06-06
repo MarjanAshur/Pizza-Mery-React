@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(../img/bg_4.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: gray;
+  margin-bottom: 16px;
+}
+
+.menu-page,
+.services-page,
+.blog-page,
+.about-page,
+.contact-page {
+  width: 100%;
+  height: 750px;
+  background-image: url(../img/bg_3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.menu-page .over-lay,
+.services-page .over-lay,
+.blog-page .over-lay,
+.about-page .over-lay,
+.contact-page .over-lay {
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.menu-page .container .row,
+.services-page .container .row,
+.blog-page .container .row,
+.about-page .container .row,
+.contact-page .container .row {
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.menu-page .container .row .welcome-box,
+.services-page .container .row .welcome-box,
+.blog-page .container .row .welcome-box,
+.about-page .container .row .welcome-box,
+.contact-page .container .row .welcome-box {
+  margin-bottom: 10px;
+  z-index: 1;
+  text-transform: uppercase;
+}
+.menu-page .container .row .welcome-box .title,
+.services-page .container .row .welcome-box .title,
+.blog-page .container .row .welcome-box .title,
+.about-page .container .row .welcome-box .title,
+.contact-page .container .row .welcome-box .title {
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 48px 0px 16px;
+}
+.menu-page .container .row .welcome-box .text,
+.services-page .container .row .welcome-box .text,
+.blog-page .container .row .welcome-box .text,
+.about-page .container .row .welcome-box .text,
+.contact-page .container .row .welcome-box .text {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #bfbfbf;
+  margin-bottom: 5px;
+}
+.menu-page .container .row .welcome-box .text a,
+.services-page .container .row .welcome-box .text a,
+.blog-page .container .row .welcome-box .text a,
+.about-page .container .row .welcome-box .text a,
+.contact-page .container .row .welcome-box .text a {
+  color: #fff;
+  margin-right: 8px;
+}
+@media (max-width: 1200px) {
+  .menu-page .container,
+  .services-page .container,
+  .blog-page .container,
+  .about-page .container,
+  .contact-page .container {
+    width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .menu-page .container,
+  .services-page .container,
+  .blog-page .container,
+  .about-page .container,
+  .contact-page .container {
+    width: 720px;
+  }
+  .menu-page .container .row .welcome-box .title,
+  .services-page .container .row .welcome-box .title,
+  .blog-page .container .row .welcome-box .title,
+  .about-page .container .row .welcome-box .title,
+  .contact-page .container .row .welcome-box .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 766px) {
+  .menu-page .container,
+  .services-page .container,
+  .blog-page .container,
+  .about-page .container,
+  .contact-page .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .menu-page .container,
+  .services-page .container,
+  .blog-page .container,
+  .about-page .container,
+  .contact-page .container {
+    max-width: 100%;
+  }
+}

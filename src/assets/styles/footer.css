@@ -1,0 +1,235 @@
+/* footerStyles.css */
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: gray;
+  margin-bottom: 16px;
+}
+.footer {
+  width: 100%;
+  padding: 105px 0;
+  background: #101315;
+}
+
+.footer .container .row {
+  gap: 8px;
+}
+
+.footer .container .row .title {
+  font-size: 16px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.footer .container .row .card {
+  padding: 0 15px;
+  margin-bottom: 48px;
+}
+
+.footer .container .row .about-us {
+  width: 25%;
+  margin-left: -15px;
+}
+
+.footer .container .row .about-us .text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .container .row .about-us .icon-list {
+  margin: 66px 0 23px;
+  display: flex;
+}
+
+.footer .container .row .about-us .icon-list .icon-items {
+  margin-right: 14px;
+}
+
+.footer .container .row .about-us .icon-list .icon-items .i {
+  height: 50px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer .container .row .recent-blog {
+  width: 35.33333%;
+}
+
+.footer .container .row .recent-blog .line-card {
+  margin-bottom: 21px;
+  display: flex;
+}
+
+.footer .container .row .recent-blog .line-card .line-card-img .card-img {
+  height: 80px;
+  width: 80px;
+  margin-right: 24px;
+  object-fit: cover;
+}
+
+.footer .container .row .recent-blog .line-card .info {
+  width: 100%;
+}
+
+.footer .container .row .recent-blog .line-card .info .line-card-title {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  transition: 0.3s all ease;
+}
+
+.footer .container .row .recent-blog .line-card .info .line-card-title:hover {
+  color: #fac564;
+}
+
+.footer .container .row .recent-blog .line-card .info .meta {
+  margin-top: 4px;
+}
+
+.footer .container .row .recent-blog .line-card .info .meta .icon {
+  font-size: 12px;
+  margin-right: 8px;
+  color: gray;
+}
+
+.footer .container .row .recent-blog .line-card .info .meta .i {
+  color: #bfbfbf;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-right: 4px;
+}
+
+.footer .container .row .services-info {
+  width: 14.66667%;
+}
+
+.footer .container .row .services-info .secvices-list .services-items a {
+  font-weight: 300;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 8px;
+  line-height: 1.8;
+  transition: 0.3s all ease;
+}
+
+.footer .container .row .services-info .secvices-list .services-items a:hover {
+  color: #fff;
+}
+
+.footer .container .row .quetion {
+  width: 25%;
+}
+
+.footer .container .row .quetion .primary-info-list .primary-info-items {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 300;
+  display: flex;
+}
+
+.footer .container .row .quetion .primary-info-list .primary-info-items .tel,
+.footer .container .row .quetion .primary-info-list .primary-info-items .mail {
+  color: #fff;
+}
+
+.footer .container .row .quetion .primary-info-list .primary-info-items .i {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  padding-top: 2px;
+  margin-right: 15px;
+  display: block;
+}
+
+.footer .container .last {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .footer .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .footer .container {
+    max-width: 720px;
+  }
+  .footer .container .row {
+    flex-wrap: wrap;
+  }
+  .footer .container .row .about-us {
+    width: 50%;
+  }
+  .footer .container .row .recent-blog {
+    width: 50%;
+  }
+  .footer .container .row .services-info {
+    width: 48%;
+  }
+  .footer .container .row .quetion {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .footer .container {
+    max-width: 540px;
+  }
+  .footer .container .row {
+    flex-wrap: wrap;
+  }
+  .footer .container .row .about-us {
+    width: 100%;
+  }
+  .footer .container .row .recent-blog {
+    width: 100%;
+  }
+  .footer .container .row .services-info {
+    width: 100%;
+  }
+  .footer .container .row .quetion {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .footer .container {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,165 @@
+.image-line {
+  width: 100%;
+  padding-top: 105px;
+}
+.image-line .row {
+  width: 100%;
+}
+.image-line .row .card {
+  display: flex;
+  width: 25%;
+  height: 300px;
+  position: relative;
+}
+.image-line .row .card .image {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.image-line .row .card:hover .i {
+  opacity: 1;
+}
+.image-line .row .card:hover .i::after {
+  transform: rotate(135deg);
+}
+.image-line .row .card .i {
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.image-line .row .card .i::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 50px;
+  height: 50px;
+  background: #fac564;
+  transform: rotate(0deg);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.statistics {
+  width: 100%;
+  padding: 105px 0;
+  background-image: url(../img/bg_2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.statistics .over-lay {
+  background: #000;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.statistics .container .row .statistics-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.statistics .container .row .statistics-box .card {
+  width: 21.4%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.statistics .container .row .statistics-box .card:hover .i {
+  color: #000;
+  z-index: 1;
+}
+.statistics .container .row .statistics-box .card:hover .i:after {
+  border: none;
+  transform: rotate(135deg);
+  background: #fac564;
+  z-index: -1;
+}
+.statistics .container .row .statistics-box .card .i {
+  color: #fac564;
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.statistics .container .row .statistics-box .card .i::after {
+  content: "";
+  border: 1px solid #fac564;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+.statistics .container .row .statistics-box .card .title {
+  font-size: 40px;
+  color: #fac564;
+}
+.statistics .container .row .statistics-box .card .text {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #bfbfbf;
+}
+.yourClass {
+  color: #fac564 !important;
+  font-size: 40px !important;
+}
+@media (max-width: 1200px) {
+  .image-line .container,
+  .statistics .container {
+    width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .image-line .container,
+  .statistics .container {
+    width: 720px;
+  }
+  .statistics .container .row .statistics-box {
+    flex-wrap: wrap;
+  }
+  .statistics .container .row .statistics-box .card {
+    width: 43.5%;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 766px) {
+  .image-line .container,
+  .statistics .container {
+    max-width: 540px;
+  }
+  .image-line .row {
+    flex-wrap: wrap;
+  }
+  .image-line .row .card {
+    width: 100%;
+  }
+  .statistics .container .row .statistics-box .card {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .image-line .container,
+  .statistics .container {
+    max-width: 100%;
+  }
+}

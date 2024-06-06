@@ -1,0 +1,502 @@
+.services {
+  width: 100%;
+  padding: 105px 0px;
+  background-image: url(../img/food.png);
+  background-repeat: repeat;
+}
+.services .container .row .services-top .title,
+.services .container .row .meal-top-one .title,
+.services .container .row .meal-top-two .title {
+  color: black;
+}
+.services .container .row .services-top .text,
+.services .container .row .meal-top-one .text,
+.services .container .row .meal-top-two .text {
+  color: #5c3d03;
+}
+.services .container .row .services-bottom {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+.services .container .row .services-bottom .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33333%;
+  margin-bottom: 20px;
+}
+.services .container .row .services-bottom .card:hover .services-img {
+  color: #fff;
+  z-index: 1;
+}
+.services .container .row .services-bottom .card:hover .services-img:after {
+  border: none;
+  transform: rotate(135deg);
+  background: #f8b500;
+  z-index: -1;
+}
+.services .container .row .services-bottom .card .services-img {
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  color: #5c3d03;
+  position: relative;
+  margin-bottom: 48px;
+  padding: 7% 0;
+}
+.services .container .row .services-bottom .card .services-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #bf7e06;
+  transition: all 0.3s ease;
+}
+.services .container .row .services-bottom .card .card-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: black;
+}
+.services .container .row .services-bottom .card .card-text {
+  color: #5c3d03;
+}
+
+.services .container .row,
+.meal .container .row,
+.blog .container .row {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.services .container .row .services-top,
+.services .container .row .meal-top-one,
+.services .container .row .meal-top-two,
+.services .container .row .blog-top,
+.meal .container .row .services-top,
+.meal .container .row .meal-top-one,
+.meal .container .row .meal-top-two,
+.meal .container .row .blog-top,
+.blog .container .row .services-top,
+.blog .container .row .meal-top-one,
+.blog .container .row .meal-top-two,
+.blog .container .row .blog-top {
+  width: 58.3%;
+  margin-bottom: 64px;
+}
+.services .container .row .services-top .title,
+.services .container .row .meal-top-one .title,
+.services .container .row .meal-top-two .title,
+.services .container .row .blog-top .title,
+.meal .container .row .services-top .title,
+.meal .container .row .meal-top-one .title,
+.meal .container .row .meal-top-two .title,
+.meal .container .row .blog-top .title,
+.blog .container .row .services-top .title,
+.blog .container .row .meal-top-one .title,
+.blog .container .row .meal-top-two .title,
+.blog .container .row .blog-top .title {
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+.meal {
+  background-image: none;
+  width: 100%;
+  padding: 105px 0px;
+}
+.meal .meal-head-type-first .container .row .meal-top-one .title {
+  color: #ffffff;
+}
+.meal .meal-head-type-first .container .row .meal-top-one .text {
+  color: gray;
+}
+.meal .meal-middle .row {
+  flex-direction: column;
+}
+.meal .meal-middle .row .first-line,
+.meal .meal-middle .row .second-line {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.meal .meal-middle .row .first-line .meal-card,
+.meal .meal-middle .row .second-line .meal-card {
+  width: 33.3333%;
+  display: flex;
+  height: 241px;
+}
+.meal .meal-middle .row .first-line .meal-card .pizza-img,
+.meal .meal-middle .row .second-line .meal-card .pizza-img {
+  width: 50%;
+}
+.meal .meal-middle .row .first-line .meal-card .pizza-img .a,
+.meal .meal-middle .row .second-line .meal-card .pizza-img .a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.meal .meal-middle .row .first-line .meal-card .pizza-img .a img,
+.meal .meal-middle .row .second-line .meal-card .pizza-img .a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.meal .meal-middle .row .first-line .meal-card .pizza-info,
+.meal .meal-middle .row .second-line .meal-card .pizza-info {
+  width: 50%;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.meal .meal-middle .row .first-line .meal-card .pizza-info .title,
+.meal .meal-middle .row .second-line .meal-card .pizza-info .title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.meal
+  .meal-middle
+  .row
+  .first-line
+  .meal-card
+  .pizza-info
+  .price-and-btn
+  .price,
+.meal
+  .meal-middle
+  .row
+  .second-line
+  .meal-card
+  .pizza-info
+  .price-and-btn
+  .price {
+  color: #fac564;
+  font-weight: 300;
+}
+.meal .meal-middle .row .first-line .meal-card .pizza-info .price-and-btn .btn,
+.meal
+  .meal-middle
+  .row
+  .second-line
+  .meal-card
+  .pizza-info
+  .price-and-btn
+  .btn {
+  font-size: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 6px 12px;
+  margin: 0 0 0 8px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  transition: color 0.15s ease-in-out;
+}
+.meal
+  .meal-middle
+  .row
+  .first-line
+  .meal-card
+  .pizza-info
+  .price-and-btn
+  .btn:hover,
+.meal
+  .meal-middle
+  .row
+  .second-line
+  .meal-card
+  .pizza-info
+  .price-and-btn
+  .btn:hover {
+  font-size: 13px;
+  border: 1px solid #fac564;
+  color: #000;
+  background-color: #fac564;
+  padding: 6px 12px;
+  margin: 0 0 0 8px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  transition: color 0.15s ease-in-out;
+}
+.meal .meal-head-type-second .container .row .meal-top-two {
+  margin-top: 64px;
+}
+.meal .meal-head-type-second .container .row .meal-top-two .decoration {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.meal .meal-head-type-second .container .row .meal-top-two .decoration::before {
+  content: "";
+  position: absolute;
+  bottom: 4.5px;
+  margin-right: 100px;
+  width: 40px;
+  height: 1px;
+  background: #8d5d05;
+}
+.meal .meal-head-type-second .container .row .meal-top-two .decoration::after {
+  content: "";
+  position: absolute;
+  bottom: 4.5px;
+  margin-left: 100px;
+  width: 40px;
+  height: 1px;
+  background: #8d5d05;
+}
+.meal
+  .meal-head-type-second
+  .container
+  .row
+  .meal-top-two
+  .decoration
+  .decoration-items {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #fac564;
+  transform: rotate(135deg);
+  margin: 0px 3.5px;
+}
+.meal
+  .meal-head-type-second
+  .container
+  .row
+  .meal-top-two
+  .decoration
+  .decoration-items:nth-child(2) {
+  width: 10px;
+  height: 10px;
+}
+.meal .meal-head-type-second .container .row .meal-top-two .title {
+  margin: 33px 0 15px;
+  color: #ffffff;
+}
+.meal .meal-head-type-second .container .row .meal-top-two .text {
+  margin-top: 22px;
+  color: gray;
+}
+.meal .menu-catalogue .container .row {
+  flex-direction: row;
+  gap: 30px;
+}
+.meal .menu-catalogue .container .row .left-side,
+.meal .menu-catalogue .container .row .right-side {
+  width: 50%;
+}
+.meal .menu-catalogue .container .row .left-side .card,
+.meal .menu-catalogue .container .row .right-side .card {
+  display: flex;
+  margin-bottom: 30px;
+}
+.meal .menu-catalogue .container .row .left-side .card .card-img,
+.meal .menu-catalogue .container .row .right-side .card .card-img {
+  border-radius: 50%;
+}
+.meal .menu-catalogue .container .row .left-side .card .card-img img,
+.meal .menu-catalogue .container .row .right-side .card .card-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.meal .menu-catalogue .container .row .left-side .card .card-info,
+.meal .menu-catalogue .container .row .right-side .card .card-info {
+  padding-left: 15px;
+  margin-top: 5px;
+  position: relative;
+  text-align: left;
+}
+.meal .menu-catalogue .container .row .left-side .card .card-info::after,
+.meal .menu-catalogue .container .row .right-side .card .card-info::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  width: 80%;
+  height: 1px;
+  border-bottom: 1px dashed #bf7e06;
+  z-index: -1;
+}
+.meal .menu-catalogue .container .row .left-side .card .card-info .up,
+.meal .menu-catalogue .container .row .right-side .card .card-info .up {
+  display: flex;
+  justify-content: space-between;
+}
+.meal .menu-catalogue .container .row .left-side .card .card-info .up .title,
+.meal .menu-catalogue .container .row .right-side .card .card-info .up .title {
+  color: #bfbfbf;
+  font-size: 18px;
+  margin-bottom: 8px;
+  line-height: 1;
+  background: url(../img/bg_4.jpg) repeat;
+  padding-right: 20px;
+}
+.meal .menu-catalogue .container .row .left-side .card .card-info .up .price,
+.meal .menu-catalogue .container .row .right-side .card .card-info .up .price {
+  width: 80px;
+  color: #fac564;
+  text-align: right;
+  background: #121618;
+  background: url(../img/bg_4.jpg) repeat;
+  padding: 2px 0px;
+  font-weight: 300;
+}
+@media (max-width: 1200px) {
+  .services .container,
+  .meal .container {
+    width: 960px;
+  }
+  .services .container .row .services-top,
+  .services .container .row .meal-top-one,
+  .services .container .row .meal-top-two,
+  .services .container .row .blog-top,
+  .meal .container .row .services-top,
+  .meal .container .row .meal-top-one,
+  .meal .container .row .meal-top-two,
+  .meal .container .row .blog-top,
+  .blog .container .row .services-top,
+  .blog .container .row .meal-top-one,
+  .blog .container .row .meal-top-two,
+  .blog .container .row .blog-top {
+    width: 55%;
+  }
+  .meal .menu-catalogue .container .row .left-side .card .card-info::after,
+  .meal .menu-catalogue .container .row .right-side .card .card-info::after {
+    top: 19%;
+  }
+}
+@media (max-width: 992px) {
+  .services .container,
+  .meal .container {
+    width: 720px;
+  }
+  .meal .meal-middle .row .first-line,
+  .meal .meal-middle .row .second-line {
+    flex-wrap: wrap;
+  }
+  .meal .meal-middle .row .first-line .meal-card,
+  .meal .meal-middle .row .second-line .meal-card {
+    margin-bottom: 30px;
+  }
+  .meal .meal-middle .row .first-line .meal-card .pizza-img .pizza-info,
+  .meal .meal-middle .row .second-line .meal-card .pizza-img .pizza-info {
+    width: 50%;
+  }
+  .meal .meal-middle .row .second-line .meal-card {
+    flex-direction: row-reverse;
+  }
+  .meal .meal-middle .row .first-line .meal-card,
+  .meal .meal-middle .row .second-line .meal-card {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 187.1px;
+  }
+  .meal .meal-middle .row .first-line .meal-card .pizza-info,
+  .meal .meal-middle .row .second-line .meal-card .pizza-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .meal .meal-middle .row .second-line .meal-card {
+    flex-direction: row-reverse;
+  }
+  .meal .menu-catalogue .container .row .left-side .card .card-info::after,
+  .meal .menu-catalogue .container .row .right-side .card .card-info::after {
+    left: 6%;
+  }
+}
+@media (max-width: 766px) {
+  .services .container,
+  .meal .container {
+    max-width: 540px;
+  }
+  .services .container .row .services-top,
+  .services .container .row .meal-top-one,
+  .services .container .row .meal-top-two,
+  .services .container .row .blog,
+  .meal .container .row .services-top,
+  .meal .container .row .meal-top-one,
+  .meal .container .row .meal-top-two,
+  .meal .container .row .blog,
+  .blog .container .row .services-top,
+  .blog .container .row .meal-top-one,
+  .blog .container .row .meal-top-two,
+  .blog .container .row .blog {
+    width: 100%;
+  }
+  .services .container .row .services-top .title,
+  .services .container .row .meal-top-one .title,
+  .services .container .row .meal-top-two .title,
+  .services .container .row .blog .title,
+  .meal .container .row .services-top .title,
+  .meal .container .row .meal-top-one .title,
+  .meal .container .row .meal-top-two .title,
+  .meal .container .row .blog .title,
+  .blog .container .row .services-top .title,
+  .blog .container .row .meal-top-one .title,
+  .blog .container .row .meal-top-two .title,
+  .blog .container .row .blog .title {
+    font-size: 28px;
+  }
+  .services .container .row .services-bottom,
+  .meal .container .row .services-bottom,
+  .blog .container .row .services-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .services .container .row .services-bottom .card,
+  .meal .container .row .services-bottom .card,
+  .blog .container .row .services-bottom .card {
+    width: 100%;
+  }
+  .meal .meal-middle .row .first-line .meal-card,
+  .meal .meal-middle .row .second-line .meal-card {
+    height: 214.1px;
+  }
+  .meal .menu-catalogue .container .row {
+    flex-wrap: wrap;
+  }
+  .meal .menu-catalogue .container .row .left-side,
+  .meal .menu-catalogue .container .row .right-side {
+    width: 100%;
+  }
+  .meal .menu-catalogue .container .row .left-side .card .card-info::after,
+  .meal .menu-catalogue .container .row .right-side .card .card-info::after {
+    top: 18%;
+  }
+}
+
+@media (max-width: 575px) {
+  .services .container,
+  .meal .container {
+    max-width: 100%;
+  }
+  .meal .meal-middle .row .first-line .meal-card,
+  .meal .meal-middle .row .second-line .meal-card {
+    height: 486px;
+  }
+  .meal .menu-catalogue .container .row {
+    flex-wrap: wrap;
+  }
+  .meal .menu-catalogue .container .row .left-side,
+  .meal .menu-catalogue .container .row .right-side {
+    width: 100%;
+  }
+  .meal .menu-catalogue .container .row .left-side .card .card-info::after,
+  .meal .menu-catalogue .container .row .right-side .card .card-info::after {
+    top: 13%;
+    width: 60%;
+    margin-left: 5px;
+  }
+}

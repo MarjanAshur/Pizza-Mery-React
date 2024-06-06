@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Nothing+You+Could+Do&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #000;
+  height: 75px;
+}
+
+.header .container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header .container .row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .row .logo {
+  max-width: 90px;
+  width: 100%;
+}
+
+.header .container .row .logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.header .container .row .nav-bar {
+  display: flex;
+}
+
+.header .container .row .nav-bar .nav-list {
+  display: flex;
+}
+.header .container .row .nav-bar .nav-list .nav-item {
+  list-style: none;
+}
+
+.header .container .row .nav-bar .nav-list .nav-item .a {
+  display: block;
+  padding: 24px 20px;
+  color: #ffffffb3;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3;
+  position: relative;
+  font-weight: 400;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+.header .container .row .nav-bar .nav-list .nav-item .a.active {
+  color: #fac564;
+}
+.header .container .row .nav-bar .nav-list .nav-item .a:hover {
+  color: #fac564;
+}
+
+.header .container .row .burger-menu {
+  cursor: pointer;
+  display: none;
+  color: #bfbfbf;
+  padding: 7px 0px 4px 12px;
+  position: relative;
+}
+.header .container .row .burger-menu .text {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  font-size: 23px;
+}
+.mobile-menu {
+  background-color: #000;
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+
+.mobile-menu.isOpen {
+  visibility: visible;
+  height: 400px;
+  opacity: 1;
+}
+.mobile-menu .container .mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  height: 100%;
+}
+.mobile-menu .container .mobile-list .mobile-item .a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.mobile-menu .container .mobile-list .mobile-item .a.active {
+  color: #fac564;
+}
+
+@media (max-width: 900px) {
+  .header .container {
+    width: 100%;
+  }
+
+  .header .container .row .nav-bar {
+    display: none;
+  }
+
+  .header .container .row .burger-menu {
+    display: block;
+  }
+
+  .header .mobile-menu {
+    background-color: #000;
+    height: 400px;
+    text-decoration: none;
+  }
+
+  .header .mobile-menu .container .mobile-list .mobile-item .a.active {
+    color: #fac564;
+  }
+}
